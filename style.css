@@ -1,0 +1,424 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    background-color: white;
+}
+body{
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+
+@media only screen and (min-width: 319px){
+
+h1,p,h6,a{
+    font-family: 'Questrial', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+
+.panel__link{
+    text-decoration: none;
+    
+}
+
+
+
+#myBtn{
+    height: 50px;
+    width: 50px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    margin-bottom: 3px;
+    margin-left: 3px;
+    
+}
+
+
+
+h2{
+    font-size:5vw;
+    font-family: 'Questrial', sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid black;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+    font-family: 'Questrial', sans-serif;
+    align-items: center;
+    
+}
+.header__left{
+    align-self: center;
+    
+}
+.header__menu{
+    
+    padding-left: 12px;
+   
+    
+}
+
+.header__nav{
+    display: none;
+}
+
+.ham{
+    width: 20px;
+    height: 2px;
+    background-color: red;
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size:1vw;
+    font-weight: bold;
+    font-family: 'Questrial', sans-serif;
+}
+
+
+.header__center{
+    justify-content: center;
+}
+
+
+
+
+.hero__image{
+    
+    background-image: url("/images/iMac.jpg");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    margin-right: auto;
+    margin-left: auto;
+    
+    /*
+    
+    height: 750px;
+    
+    position: relative;
+   
+    width: 100%;
+    background-attachment: fixed;
+    */
+}
+
+ .hero__bio{
+    
+    background:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border: 4px solid white;
+    height: 320px;
+    width: 290px;
+    font-size:1vw;
+    font-family: 'Questrial', sans-serif;
+}
+
+.hero__bio > h1,p{
+   /*padding-top: 70px;*/
+   line-height: 30px;
+   font-size: small;
+}
+.hero__bio >h1{
+    
+    margin-bottom: 3px;
+}
+.hero__bio > button{
+    background: none;
+    color: white;
+    border: 1px solid white;
+    height: 50px;
+    width: 30%;
+    margin-top: 65px;
+    font-weight: bold;
+}
+
+.logo{
+    height:40px;
+    width: 120px;
+    margin-right: 3px;
+    object-fit: contain;
+}
+
+.parallax{
+    
+    background-color: white;
+    height:auto;
+
+}
+
+.tech__list{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.parallax > h1, .parallax > .parallax__tech > h1{
+    margin-left: 15px;
+}
+
+.parallax > .tech__list > h1{
+    font-size: 4vw;
+   
+}
+
+.parallax >.tech__list > p {
+    font-size: 1.5vw;
+}
+
+.parallax >.tech__list > p >  span{
+    font-weight: bold;
+   
+}
+
+.projects_list{
+    display: flex;
+    flex-direction: column;
+
+}
+.project_photo{
+    height: 50px;
+    width: 75px;
+    object-fit: contain;
+}
+
+
+
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    
+}
+
+footer > .footer__row2 > a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer__row2{
+    justify-content: center;
+}
+
+footer > p , h6{
+
+    color: white;
+    font-size: small;
+  
+}
+
+footer > .footer__row1,.footer__row2,.footer__row3{
+    display: flex;
+   
+
+}
+.footer__row3{
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.accordion {
+    background-color: #ffffff;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size:1vw;
+    transition: 0.4s;
+    border-top: 1px solid black;
+  }
+  
+  .active, .accordion:hover {
+    background-color: black;
+    color: white;
+
+  }
+
+  .panel_link_container{
+
+    display:flex;
+    /*background-color: black;*/
+    
+    flex-direction: column;
+    
+    
+
+  }
+  .panel_link_container > img{
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;   
+  }
+
+  .panel > p{
+      text-align: center;
+      margin-bottom: 1px;
+  }
+  
+  .panel {
+    padding: 3px 3px 3px 3px;
+    background-color: white;
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .project_photo{
+      height: 120px;
+      width: 90px;
+      object-fit: contain;
+      margin-top: 3px;
+      margin-bottom: 1px;
+  }
+
+  .link_container{
+      display: flex;
+      line-height: 30px;
+      flex-direction: column;
+  }
+
+  .link_container > a {
+      margin-left: 3px;
+      margin-right:3px;
+      text-align: center;
+  }
+
+    
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .header__menu{
+        align-items: center;
+        
+    }
+
+    .hero__bio{
+        width: 320px;
+
+
+    }
+    .ham{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    
+    }
+
+
+    .header__left{
+        margin-left: 10px;
+    }
+    
+    .parallax > button {
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .parallax > h1, .parallax > .tech__list > h1{
+        font-size: 4vw;
+    }
+    
+
+
+
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    .header__center{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header__left{
+        display: none;
+    }
+   
+
+  
+    .header__nav{
+        justify-content: center;
+        display: block;
+    }
+
+    ul{
+        margin-left: auto;
+        margin-right: auto;
+    }
+   li{
+       color: black;
+       font-size:small;
+      
+   }
+
+   header{
+       background-color: white;
+   }
+
+   header >.header__center > h2{
+    padding-left: 140px;
+   }
+       
+
+    .nav__options{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
